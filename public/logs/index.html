@@ -1,0 +1,77 @@
+<html>
+
+<header>
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+
+ <link href="../style.css" rel="stylesheet">
+
+   <style>
+ 
+   #checkinMap
+   {
+        height: 340px;
+        margin: 8px 0px;
+   }
+   </style>
+</header>
+
+
+<body>
+
+
+
+<p>
+<div><a href="/index.html">Checkin</a> | <a href="/">View Checkin</a></div>
+</p>
+
+<div id="checkinMap"></div>
+<script src="logs.js"></script>
+
+<script>
+
+
+
+let firstTime=true;
+
+/*async function getISS()
+{
+	const url = 'https://api.wheretheiss.at/v1/satellites/25544';
+	const response = await fetch(url);
+	const data = await response.json();
+	console.log(data.latitude);
+	console.log(data.longitude);
+
+
+	const {latitude,longitude} = data;
+	//document.getElementById('lat').textContent = latitude.toFixed(2);
+	//document.getElementById('lon').textContent = longitude.toFixed(2);
+
+	//L.marker([latitude,longitude]).addTo(mymap);
+	marker.setLatLng([latitude,longitude]);
+	
+	if (firstTime)
+	{
+		mymap.setView([latitude,longitude],2);
+		firstTime = false;
+	}
+	
+}
+
+getISS();
+setInterval( getISS,1000);
+*/
+</script>
+
+
+
+</body>
+
+
+</html>
+
